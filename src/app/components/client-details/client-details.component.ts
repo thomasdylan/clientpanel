@@ -3,7 +3,7 @@ import { ClientService } from '../../services/client.service';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { FlashMessagesService } from 'angular2-flash-messages';
 import { Client } from '../../models/Client';
-import { ThrowStmt } from '@angular/compiler';
+import { FlashMessagesModule } from 'angular2-flash-messages/module/module';
 
 @Component({
   selector: 'app-client-details',
@@ -24,16 +24,29 @@ export class ClientDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    // Get id from url
     this.id = this.route.snapshot.params['id'];
+    // Get client
     this.clientService.getClient(this.id).subscribe(client => {
-      if(client != null) {
-        if(client.balance > 0) {
+      if (client != null) {
+        if (client.balance > 0) {
           this.hasBalance = true;
         }
       }
-      
+
       this.client = client;
-    })
+    });
+  }
+
+  updateBalance() {
+    this.clientService.updateClient(this.client);
+    this.flashMessage.show('Balance updated', {
+      cssClass: 'alert-success', timeout: 4000
+    });
+  }
+
+  onDeleteClick() {
+    console.log("delete");
   }
 
 }
