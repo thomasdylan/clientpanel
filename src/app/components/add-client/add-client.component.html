@@ -86,7 +86,7 @@
                 #clientPhone="ngModel"
                 [ngClass]="{ 'is-invalid': clientPhone.errors && clientPhone.touched }" 
                 [(ngModel)]="client.phone"
-                pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$" 
+                minlength="10"
                 required
               >
 
