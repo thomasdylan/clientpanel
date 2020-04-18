@@ -12,7 +12,7 @@ import { FlashMessagesModule } from 'angular2-flash-messages/module/module';
 })
 export class EditClientComponent implements OnInit {
   id: string;
-  client: CLient = {
+  client: Client = {
     firstName: '',
     lastName: '',
     email: '', 
