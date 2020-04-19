@@ -1,27 +1,31 @@
-# Clientpanel
+# Client Panel  
+Client Panel is built using Angular.  
+This app allows registered users to add and adjust the information of clients.  
+Guest login provided for users to test application without creating an account.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
+## Live Site  
+https://client-panel-6e5ab.web.app/login
 
-## Development server
+### Guest Login
+email: guest@example.com  
+password: 123456  
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+**General functionality:**
 
-## Code scaffolding
+- Authenticate users via Firebase (login/register pages + logout).
+- Add, edit or delete clients stored in Firestore.
+- Update balance of each client.
+- Uses guards to prevent unauthorized access.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+**The general page breakdown**
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+- Dashboard (https://client-panel-6e5ab.web.app)
+    ![](/readme_images/dashboard-1140px-500px.png)
+- Login (https://client-panel-6e5ab.web.app/login)
+    ![](/readme_images/login-1140px-500px.png)
+- Settings (https://client-panel-6e5ab.web.app/settings)
+    ![](/readme_images/settings-1140px-500px.png)
+- Add Client (https://client-panel-6e5ab.web.app/client/add)
+    ![](/readme_images/add-edit-client-1140px-700px.png)
+- Client Details (https://client-panel-6e5ab.web.app/client/:id)
+    ![](/readme_images/client-detail-1140px-500px.png)
