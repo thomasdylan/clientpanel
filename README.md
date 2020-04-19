@@ -19,13 +19,13 @@ password: 123456
 
 **The general page breakdown**
 
-- Dashboard (https://client-panel-6e5ab.web.app)
-    ![](/readme_images/dashboard-1140px-500px.png)
-- Login (https://client-panel-6e5ab.web.app/login)
+### Dashboard (https://client-panel-6e5ab.web.app)
+    ![](/readme_images/dashboard-1140px-500x.png)
+### Login (https://client-panel-6e5ab.web.app/login)
     ![](/readme_images/login-1140px-500px.png)
-- Settings (https://client-panel-6e5ab.web.app/settings)
+### Settings (https://client-panel-6e5ab.web.app/settings)
     ![](/readme_images/settings-1140px-500px.png)
-- Add Client (https://client-panel-6e5ab.web.app/client/add)
+### Add Client (https://client-panel-6e5ab.web.app/client/add)
     ![](/readme_images/add-edit-client-1140px-700px.png)
-- Client Details (https://client-panel-6e5ab.web.app/client/:id)
+### Client Details (https://client-panel-6e5ab.web.app/client/:id)
     ![](/readme_images/client-detail-1140px-500px.png)
